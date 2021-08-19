@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <section id="SignIn">
+        <div class="grid">
+            <div class="container" style="margin-top: 70px;">
+                <h2>Sign In</h2>
+                <input type="email" placeholder="myInfo@mail.com" id="logInEmailInput">
+                <input type="password" placeholder="Password" id="logInPasswordInput">
+                <button class="container-button" id="SignInButton">Sign in</button>
+                <p>Need a new account? <a id="goToSignUp">Sign up</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="SignUp" hidden>
+        <div class="grid">
+            <div class="container" style="margin-top: 45px;">
+                <h2>Sign Up</h2>
+                <form class="form">
+                    <input type="email" placeholder="myInfo@mail.com">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Retype password">
+                    <button class="container-button" id="SignUpButton">Sign up</button>
+                    <p>Already have an account? <a id="goToSignIn">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="shopList" hidden="false">
+
+    </section>
+    <section id="productsList" hidden>
+        
+    </section>
+    
+    <secion id="HomeScreen" hidden>
+        <div class="container2"> 
+            </header>
+            <!-- Welcome Section -->
+            <section class="Welcome" id="Welcome">
+                <h2>E- Comerce</h2>
+                <p class="tagline">"Technologies des Services" web project</p>
+                <button id="startShoppingBtn">Start Shopping</button> 
+            </section>
+            <!-- About Section -->
+            <section class="about" id="about">
+                <h2 class="hidden">About</h2>
+                <p class="text_column">The project consists of a very simple e-commerce site. A web application that provides the user with different product categories, which can be consulted, ordered and even give an opinion concerning a product already purchased.</p>
+                <p class="text_column">E-commerce is a single page application website, fully coded from scratch, without the use of any open-source frameworks nor any toolkits
+                    technologies used: HTML5, JavaScript, TypeScript, Java and CSS</p>
+                <p class="text_column">This project was simply made to understand and work around the MVP design pattern as part of our educational program in SUPCOM</p>
+            </section>
+            <!-- Stats Gallery Section -->
+            <div class="gallery">
+                <div class="thumbnail">
+                    <h1 class="stats">HTML5</h1>
+                    <h4>Markup language</h4>
+                    <p>Structuring and presenting content on the World Wide Web</p>
+                </div> 
+                <div class="thumbnail">
+                    <h1 class="stats">TypeScript</h1>
+                    <h4>Making it interactive</h4>
+                    <p>A strongly typed programming language which builds on JavaScript</p>
+                </div>
+                <div class="thumbnail">
+                    <h1 class="stats">CSS</h1>
+                    <h4>Cascading Style Sheets</h4>
+                    <p>Language for describing the presentation of Web pages, including colors, layout, and fonts</p>
+                </div>
+                <div class="thumbnail">
+                    <h1 class="stats">Java</h1>
+                    <h4>Back-end development</h4>
+                    <p>Used as the server-side language</p>
+                </div>
+            </div>
+            <!-- Parallax Section -->
+            <section class="banner">
+                <h2 class="parallax">Affes Achraf</h2>
+                <p class="parallax_description">INDP2-E class, respected the rules : no bootstrap, no nodejs, only the MVP design pattern, avoid stealing ready to use blocks of code.</p>
+            </section>
+            <!-- Copyrights Section -->
+            <div class="copyright">&copy;2021 - <strong>Affes Achraf</strong></div>
+        </div>
+    </secion>
+    <section id="navBar" hidden>
+        <div class="nav sticky">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    E-Commerce
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a id="goToMyShopList">My Cart <i class="far fa-shopping-cart"></i></a>
+                <a id="goToHome">Home</a>
+                <a id="SignOutButton">Sign out</a>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>
