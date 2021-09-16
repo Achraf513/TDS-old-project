@@ -6,7 +6,7 @@ import { feedBackModel, feedBackPresenter, feedBackView } from './MVP/feedBack.j
 function SignIn() {
     var email = document.getElementById("logInEmailInput").value;
     var password = document.getElementById("logInPasswordInput").value;
-    if (email == "achraf.affes@supcom.tn" && password == "test513") {
+    if (email == "achraf.affes@gmail.com" && password == "testtest") {
         document.getElementById("SignIn").hidden = true;
         document.getElementById("HomeScreen").hidden = false;
         document.getElementById("navBar").hidden = false;
